@@ -5,7 +5,7 @@
 BHT-Kompass
 
 ## Mitwirkende
-Onur Nergis, Seyma Karakurt ,Furkan Günes, Tarik Aksoy, Yusuf Akgül, Osman Özkan
+Onur Nergis, Seyma Karakurt ,Furkan Günes, Tarik Aksoy, Osman Özkan
 
 ## Projektbeschreibung
 Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
@@ -35,7 +35,7 @@ Handy bekommt, sprich als Erinnerung zum anstehenden Unterricht. Somit kann
 auch eventuell vermieden werden, dass Studenten zu spät zu Ihren Unterrichten 
 kommen.
 
-##Anwendungsszenarien
+## Anwendungsszenarien
 Die Applikation (BHT-Kompass) ist dazu gedacht das Studenten es an unserem Campus verwenden können.
 Studenten können mittels der App sich an der BHT orientieren und schnellstmöglich die Räume zu deren aktuellen
 Modulen finden.
