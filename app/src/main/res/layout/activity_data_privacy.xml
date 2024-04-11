@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataPrivacyActivity">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_top">
+
+        <ImageView
+            android:id="@+id/bhtIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/bht_kompass_icon"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/homeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bhtIcon"
+            android:layout_marginLeft="20dp"
+            android:text="Datenschutz"
+            android:textColor="@color/white"
+            android:fontFamily="@font/rubik_medium"
+            android:textSize="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/homeText"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:src="@drawable/ic_baseline_arrow_back_24"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/homeText"
+            android:layout_marginTop="40dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/dataTopicText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Die verantwortliche Stelle für die Datenverarbeitung dieser Applikations ist:"
+            android:textAlignment="center"
+            android:fontFamily="@font/rubik_medium"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dataTopicText"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/dataText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dataTopicText"
+                android:text="@string/dataPrivacy"
+                android:fontFamily="@font/rubik"
+                android:layout_centerHorizontal="true"
+                android:textSize="18dp" />
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

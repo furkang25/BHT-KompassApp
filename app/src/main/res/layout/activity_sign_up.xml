@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:id="@+id/bhtIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bht_kompass_icon"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_below="@id/bhtIcon"
+        android:layout_height="fill_parent"
+        android:background="@drawable/rectangle">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@id/bhtIcon">
+
+        <TextView
+            android:id="@+id/anmelden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/rubik_medium"
+            android:text="Registrieren"
+            android:textColor="@color/white"
+            android:textSize="40dp"/>
+
+        <TextView
+            android:id="@+id/userNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/anmelden"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/rubik"
+            android:text="Anmeldename"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="20dp"
+            android:paddingLeft="15dp"
+            android:fontFamily="@font/rubik"
+            android:textColor="@color/black"
+            android:layout_below="@id/userNameText"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_normal"/>
+
+        <TextView
+            android:id="@+id/emailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userName"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/rubik"
+            android:text="E-Mail-Adresse"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:layout_below="@id/emailText"
+            android:textSize="20dp"
+            android:paddingLeft="15dp"
+            android:fontFamily="@font/rubik"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_normal"/>
+
+        <TextView
+            android:id="@+id/passwordText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/rubik"
+            android:text="Passwort"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/passwordLayout"
+            android:orientation="horizontal"
+            android:layout_below="@+id/passwordText">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="20dp"
+                app:passwordToggleDrawable="@drawable/ic_baseline_remove_red_eye_24"
+                android:paddingLeft="15dp"
+                android:fontFamily="@font/rubik"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp"
+                android:inputType="textPassword"
+                android:background="@drawable/button_normal"/>
+
+            <ImageView
+                android:id="@+id/hintPassword"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-60dp"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:src="@drawable/ic_baseline_remove_red_eye_24_hint"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/passwordTextRepeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordLayout"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/rubik"
+            android:text="Passwort wiederholen"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/passwordRepeatLayout"
+            android:orientation="horizontal"
+            android:layout_below="@+id/passwordTextRepeat">
+
+            <EditText
+                android:id="@+id/passwordRepeat"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="20dp"
+                app:passwordToggleDrawable="@drawable/ic_baseline_remove_red_eye_24"
+                android:paddingLeft="15dp"
+                android:fontFamily="@font/rubik"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp"
+                android:inputType="textPassword"
+                android:background="@drawable/button_normal"/>
+
+            <ImageView
+                android:id="@+id/hintPasswordRepeat"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-60dp"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:src="@drawable/ic_baseline_remove_red_eye_24_hint"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/error"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_selector"
+            android:fontFamily="@font/rubik_medium"
+            android:text="Registrieren" />
+
+        <TextView
+            android:id="@+id/error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/rubik"
+            android:textColor="#ff0000"
+            android:layout_below="@id/passwordRepeatLayout"/>
+
+        <TextView
+            android:id="@+id/hasUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ich habe einen Benutzer"
+            android:fontFamily="@font/rubik_medium"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/signup"
+            android:textColor="@drawable/textcolor_textview"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"/>
+
+        <FrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:layout_below="@id/passwordRepeatLayout">
+            <ProgressBar
+                android:id="@+id/loading"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:indeterminateTint="@color/white"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/hasUser"/>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

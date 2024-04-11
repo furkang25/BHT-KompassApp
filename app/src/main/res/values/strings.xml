@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">BHT Kompass App</string>
+    <string name="back4app_server_url" translatable="false">https://parseapi.back4app.com/</string>
+    <string name="back4app_app_id" translatable="false">LI9N85Zr3OUfCnWoy5H6dLtQ7f1EvgZYCo5ByXO0</string>
+    <string name="back4app_client_key" translatable="false">kVH8Ou4BAD2AUHOYWNi9iN8m6EdDxueZYFhviYLn</string>
+    <string name="dataPrivacy">Tecrox UG\nLuxemburger Straße 10\n13353 Berlin\n\nDie verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten.\n\nRegistrierung auf dieser Website\n\nZur Nutzung bestimmter Funktionen können Sie sich auf unserer Website registrieren. Die übermittelten Daten dienen ausschließlich zum Zwecke der Nutzung des jeweiligen Angebotes oder Dienstes. Bei der Registrierung abgefragte Pflichtangaben sind vollständig anzugeben. Andernfalls werden wir die Registrierung ablehnen.\n\nIm Falle wichtiger Änderungen, etwa aus technischen Gründen, informieren wir Sie per E-Mail. Die E-Mail wird an die Adresse versendet, die bei der Registrierung angegeben wurde.\n\nDie Verarbeitung der bei der Registrierung eingegebenen Daten erfolgt auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Ein Widerruf Ihrer bereits erteilten Einwilligung ist jederzeit möglich. Für den Widerruf genügt eine formlose Mitteilung per E-Mail. Die Rechtmäßigkeit der bereits erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.\n\nWir speichern die bei der Registrierung erfassten Daten während des Zeitraums, den Sie auf unserer Website registriert sind. Ihren Daten werden gelöscht, sollten Sie Ihre Registrierung aufheben. Gesetzliche Aufbewahrungsfristen bleiben unberührt.\n\nWiderruf Ihrer Einwilligung zur Datenverarbeitung\n\nNur mit Ihrer ausdrücklichen Einwilligung sind einige Vorgänge der Datenverarbeitung möglich. Ein Widerruf Ihrer bereits erteilten Einwilligung ist jederzeit möglich. Für den Widerruf genügt eine formlose Mitteilung per E-Mail. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.\n\nRecht auf Auskunft, Berichtigung, Sperrung, Löschung\n\nSie haben jederzeit im Rahmen der geltenden gesetzlichen Bestimmungen das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, Herkunft der Daten, deren Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Diesbezüglich und auch zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit über die im Impressum aufgeführten Kontaktmöglichkeiten an uns wenden.</string>
+    <string name="abouUs">Die Analyse der Problemstellung, dass die meisten Studierenden sowie einige Dozenten recht orientierungslos an unserer Hochschule sind, hat uns auf die Idee gebracht, diese Applikation zu entwickeln.\n\nUnser Ziel ist es, unsere Kommilitonen sowie unsere Dozenten mit der App BHT Kompass mit unter Anderem einer besseren Orientierung durch unsere Hochschule zu führen.Zudem möchten wir euch mit einigen Features begeistern und immer wieder aufs neue motivieren.\n\nWir haben immer die neuesten Informationen über die jeweiligen Räume des Campus BHT, wenn es um die Ausstattung geht.\n\nDes Weiteren bieten wir unseren Usern einen individuellen Stundenplan. Dieser Stundenplan passt sich den Angaben nach der Registrierung im Profil an. Diese Angaben synchronisieren sich dann im Stundenplan.\n\nDie Interessen unserer User haben immer höchste Priorität für uns. Von daher hoffen wir, dass ihr genauso viel Gefallen an unserer Applikation finden, wie es unsere Leidenschaft ist, sie euch verfügbar zu machen.</string>
+
+    <string-array name="studyName">
+        <item>Architektur (B.Sc.)</item>
+        <item>Maschinenbau (B.Eng.)</item>
+        <item>Medieninformatik (B.Sc.)</item>
+        <item>Betriebswirtschaftslehre (Dual) (B.A.)</item>
+        <item>Druck- und Medientechnik (B.Eng.)</item>
+    </string-array>
+
+    <string-array name="times">
+        <item>8:00 - 9:30</item>
+        <item>10:00 - 11:30</item>
+        <item>12:15 - 13:45</item>
+        <item>14:15 - 15:45</item>
+        <item>16:00 - 17:30</item>
+        <item>17:45 - 19:15</item>
+        <item>19:30 - 21:00</item>
+    </string-array>
+
+    <string-array name="days">
+        <item>Montag</item>
+        <item>Dienstag</item>
+        <item>Mittwoch</item>
+        <item>Donnerstag</item>
+        <item>Freitag</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Samples: -->
+    <string name="situm_sample_title_simple_map">Simple map</string>
+    <string name="situm_sample_title_log_events">Listen events</string>
+    <string name="situm_sample_title_library">Using SitumMapsLibrary</string>
+    <string name="situm_sample_title_delegate_back_events">Delegate onBackPressed event</string>
+    <string name="situm_sample_title_no_search_view">Remove search view</string>
+    <string name="situm_sample_title_dashboard_theme">Use theme from Dashboard</string>
+    <string name="situm_sample_title_interceptors">Intercept and customize requests</string>
+    <string name="situm_sample_title_customize_ui">Custom UI elements</string>
+    <string name="situm_sample_title_custom_position_icons">Custom position icons</string>
+    <string name="situm_sample_title_auto_start_positioning">Start positioning automatically</string>
+    <string name="situm_sample_title_one_building_mode">Single building mode</string>
+    <string name="situm_sample_title_change_geofences_color">Change geofences color</string>
+    <string name="one_building_mode_building_id" />
+</resources>

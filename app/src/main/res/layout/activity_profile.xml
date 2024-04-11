@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/bhtIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bht_kompass_icon"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/bhtIcon"
+        android:layout_height="fill_parent"
+        android:background="@drawable/rectangle">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@id/bhtIcon">
+
+        <TextView
+            android:id="@+id/profil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/rubik_medium"
+            android:text="Profil"
+            android:textColor="@color/white"
+            android:textSize="40dp"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameText"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/profil"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/firstNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profil"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/rubik"
+                android:text="Vorname"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/lastNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profil"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/rubik"
+                android:layout_weight="1"
+                android:text="Nachname"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:layout_below="@id/nameText"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/firstName"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:textSize="20dp"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/rubik"
+                android:layout_below="@id/firstNameText"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button_normal"/>
+
+            <EditText
+                android:id="@+id/lastName"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:textSize="20dp"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/rubik"
+                android:layout_below="@id/firstNameText"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button_normal"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/degreeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/rubik"
+            android:text="Studiengang"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <RelativeLayout
+            android:id="@+id/studyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/degreeText"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_normal"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/dropdownStudy"
+                android:layout_width="match_parent"
+                android:spinnerMode="dropdown"
+                android:dropDownWidth="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="9dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/rubik"
+                android:background="@drawable/button_normal"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/dropdown" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/moduleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/studyName"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/rubik"
+            android:text="Module in diesem Semester"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/moduleText"
+            android:id="@+id/moduleLayout">
+
+        <ListView
+            android:id="@+id/module"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:divider="@color/black"
+            android:dividerHeight="1dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/rubik"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_normal" />
+        </LinearLayout>
+
+        <FrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:layout_below="@id/moduleLayout">
+            <ProgressBar
+                android:id="@+id/loading"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:indeterminateTint="@color/white"/>
+        </FrameLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="45dp"
+            android:layout_below="@id/moduleLayout"
+            android:fontFamily="@font/rubik_medium"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="Speichern"
+            android:background="@drawable/button_normal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/save"/>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

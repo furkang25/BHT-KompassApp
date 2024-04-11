@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SettingActivity">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_top">
+
+        <ImageView
+            android:id="@+id/bhtIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/bht_kompass_icon"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/homeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bhtIcon"
+            android:layout_marginLeft="20dp"
+            android:text="Einstellungen"
+            android:textColor="@color/white"
+            android:fontFamily="@font/rubik_medium"
+            android:textSize="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/homeText"
+            android:layout_marginTop="40dp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/benutzerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Benutzer"
+            android:fontFamily="@font/rubik_medium"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/benutzerText"
+            android:clickable="true"
+            android:fontFamily="@font/rubik"
+            android:layout_marginLeft="10dp"
+            android:textSize="17dp"
+            android:text="Profil bearbeiten"
+            android:layout_gravity="center"
+            android:layout_marginTop="17dp"/>
+
+        <LinearLayout
+            android:id="@+id/editProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/benutzerText"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/dropdown"
+                android:rotation="270"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editProfile"
+            android:clickable="true"
+            android:fontFamily="@font/rubik"
+            android:textSize="17dp"
+            android:text="Passwort ändern"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:gravity="left"/>
+
+        <LinearLayout
+            android:id="@+id/changePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/editProfile"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/dropdown"
+                android:rotation="270"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/changePassword"
+            android:clickable="true"
+            android:fontFamily="@font/rubik"
+            android:textSize="17dp"
+            android:text="Benachrichtigungen"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:gravity="left"/>
+
+        <LinearLayout
+            android:id="@+id/notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/changePassword"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:gravity="right">
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/dropdown"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:thumbTint="@color/bht" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notification"
+            android:clickable="true"
+            android:fontFamily="@font/rubik"
+            android:textSize="17dp"
+            android:text="Stundenplan zurücksetzen"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:gravity="left"/>
+
+        <LinearLayout
+            android:id="@+id/deleteSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/notification"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/dropdown"
+                android:rotation="270"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deleteSchedule"
+            android:clickable="true"
+            android:fontFamily="@font/rubik"
+            android:textSize="17dp"
+            android:text="Abmelden"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:gravity="left"/>
+
+        <LinearLayout
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/deleteSchedule"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/dropdown"
+                android:rotation="270"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sonstigeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sonstiges"
+            android:layout_below="@id/logout"
+            android:fontFamily="@font/rubik_medium"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sonstigeText"
+            android:clickable="true"
+            android:fontFamily="@font/rubik"
+            android:textSize="17dp"
+            android:text="Über uns"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="17dp"
+            android:gravity="left"/>
+
+        <LinearLayout
+            android:id="@+id/aboutUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/sonstigeText"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/dropdown"
+                android:rotation="270"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aboutUs"
+            android:clickable="true"
+            android:fontFamily="@font/rubik"
+            android:textSize="17dp"
+            android:text="Datenschutzrichtlinien"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:gravity="left"/>
+
+        <LinearLayout
+            android:id="@+id/dataPrivacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/aboutUs"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/dropdown"
+                android:rotation="270"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/navbar_design"
+        app:menu="@menu/bht_menu"/>
+
+</RelativeLayout>
