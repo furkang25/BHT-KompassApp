@@ -1,4 +1,4 @@
-# Projekt WiSe2223 von Tecrox
+# BHT-Kompass App
 
 
 ## Projektname
